@@ -1,2 +1,2 @@
 # tour_plan
-Проект Дмитрия Мазикина
+Dmitry Mazikin
