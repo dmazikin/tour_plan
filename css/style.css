@@ -433,6 +433,10 @@ template {
   height: 40px;
 }
 
+.search__button {
+  cursor: pointer;
+}
+
 .search__input {
   width: 350px;
   height: 100%;
