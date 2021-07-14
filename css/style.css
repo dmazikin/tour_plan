@@ -635,9 +635,16 @@ template {
   }
   .slider {
     max-height: 250px;
+    max-width: 100%;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 389px) {
+  .booking, .map {
+    max-width: 100%;
   }
 }
 
