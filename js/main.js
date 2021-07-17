@@ -24,6 +24,8 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+//Подключение параллакса
+$(".newsletter").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 var myMap;
 
 ymaps.ready(init);
