@@ -32,7 +32,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
   $mail->Username   = 'mazikindima@mail.ru'; // Логин на почте
-  $mail->Password   = 'don@ld2899157'; // Пароль на почте
+  $mail->Password   = '2899157donald'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('mazikindima@mail.ru', 'Дмитрий Мазикин'); // Адрес самой почты и имя отправителя
@@ -57,4 +57,4 @@ try {
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html ');
