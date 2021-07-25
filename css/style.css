@@ -6,6 +6,12 @@ body { font-family: 'Mulish', sans-serif; color: #333333; background-color: #F5F
 
 button { padding: 0; border: none; }
 
+.input { background: #FFFFFF; border-radius: 4px; border: none; padding: 0 23px; height: 50px; }
+
+.message { border-radius: 4px; background: #FFFFFF; padding: 18px 23px; border: none; width: 100%; height: 133px; resize: both; }
+
+.button { min-width: 160px; min-height: 50px; background-color: #EC1F46; padding: 18px; font-size: 12px; line-height: 15px; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -193,7 +199,7 @@ template { display: none; }
 
 .offer { font-size: 10px; line-height: 13px; padding: 4px 9px; background-color: #EC1F46; border-radius: 4px; color: #fff; }
 
-.rating { max-width: 65px; min-height: 45px; color: #fff; background-color: #EC1F46; border-radius: 4px; text-align: center; }
+.rating { cursor: pointer; max-width: 65px; min-height: 45px; color: #fff; background-color: #EC1F46; border-radius: 4px; text-align: center; }
 
 .rating__text { font-size: 8px; line-height: 10px; }
 
@@ -363,13 +369,11 @@ template { display: none; }
 
 .footer__link { text-decoration: none; color: inherit; }
 
-.footer__input { background: #FFFFFF; border-radius: 4px; border: none; padding: 0 23px; height: 50px; margin-bottom: 15px; flex-basis: 48%; }
+.footer__input { margin-bottom: 15px; flex-basis: 48%; }
 
-.footer__message { border-radius: 4px; background: #FFFFFF; padding: 18px 23px; border: none; width: 100%; height: 133px; margin-bottom: 22px; resize: both; }
+.footer__message { margin-bottom: 22px; }
 
-.footer__button { min-width: 160px; min-height: 50px; background-color: #EC1F46; padding: 18px; font-size: 12px; line-height: 15px; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-
-.footer__button-wrapper { display: flex; justify-content: space-between; flex-basis: 100%; align-items: center; }
+.footer__message-wrapper { display: flex; justify-content: space-between; flex-basis: 100%; align-items: center; }
 
 .footer__info { font-weight: bold; font-size: 12px; line-height: 15px; color: #E0E0E0; }
 
@@ -380,6 +384,24 @@ template { display: none; }
 .footer__rules-item:nth-of-type(n+ 2) { margin-left: 10px; }
 
 .footer__rules-link { text-decoration: none; color: #fff; font-weight: normal; font-size: 12px; line-height: 15px; }
+
+.modal__overlay { position: fixed; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(0, 143, 223, 0.39); z-index: 100; visibility: hidden; opacity: 0; transition: opacity 0.2s; }
+
+.modal__overlay--visible { visibility: visible; opacity: 1; }
+
+.modal__dialog { position: fixed; top: 50%; left: 50%; padding: 33px 88px; background-color: #0A223D; border-radius: 8px; color: #fff; z-index: 101; max-width: 478px; transform: translate(-50%, -50%); visibility: hidden; opacity: 0; transition: opacity 0.2s; }
+
+.modal__dialog--visible { visibility: visible; opacity: 1; }
+
+.modal__close { position: fixed; right: 18px; top: 17px; text-decoration: none; cursor: pointer; }
+
+.modal__input { width: 100%; margin-bottom: 15px; }
+
+.modal__message { width: 100%; min-height: 123px; margin-bottom: 15px; }
+
+.modal__info { font-weight: bold; font-size: 12px; line-height: 15px; color: #E0E0E0; }
+
+.modal__title { font-weight: bold; font-size: 18px; line-height: 23px; margin-bottom: 15px; text-transform: uppercase; text-align: center; }
 
 @media (max-width: 1200px) { .container { max-width: 960px; }
   .hotel-slider { width: 570px; border-radius: 8px; }
