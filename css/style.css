@@ -287,8 +287,6 @@ template { display: none; }
 
 .card__button { font-style: normal; font-weight: 600; font-size: 12px; line-height: 16px; color: #fff; padding: 7px 22px; border: none; border-radius: 4px; background-color: #EC1F46; cursor: pointer; }
 
-.packages { margin-bottom: 70px; }
-
 .packages__title { font-style: normal; font-weight: bold; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; color: #333333; }
 
 .packages-wrapper { display: grid; width: 100%; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr; gap: 30px 30px; }
@@ -411,8 +409,8 @@ template { display: none; }
   .footer__categories { grid-row: 2 / 3; grid-column: span 2; }
   .footer__legal { grid-column: span 2; }
   .footer__additional { grid-column: span 2; }
-  .footer__contacts-details { grid-column: span 5; grid-row: 3; }
-  .footer__contacts-form { grid-column: span 5; grid-row: 4; }
+  .footer__contact-details { grid-column: span 5; grid-row: 3; }
+  .footer__contact-form { grid-column: span 5; grid-row: 4; }
   .footer__rules { grid-row: 5; grid-column: 1 / 7; } }
 
 @media (max-width: 768px) { .container { max-width: 576px; width: 92%; }
