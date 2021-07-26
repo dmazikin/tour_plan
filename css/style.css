@@ -8,8 +8,6 @@ button { padding: 0; border: none; }
 
 .input { background: #FFFFFF; border-radius: 4px; border: none; padding: 0 23px; height: 50px; }
 
-.message { border-radius: 4px; background: #FFFFFF; padding: 18px 23px; border: none; width: 100%; height: 133px; resize: both; }
-
 .button { min-width: 160px; min-height: 50px; background-color: #EC1F46; padding: 18px; font-size: 12px; line-height: 15px; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -63,9 +61,7 @@ img { border-style: none; }
 
 /* Forms ========================================================================== */
 /** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
-button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
-
-/** Show the overflow in IE. 1. Show the overflow in Edge. */
+/* Show the overflow in IE. 1. Show the overflow in Edge. */
 button, input { /* 1 */ overflow: visible; }
 
 /** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
@@ -235,6 +231,8 @@ template { display: none; }
 
 .map { width: 347px; height: 213px; background-color: black; overflow: hidden; border-radius: 10px; }
 
+.thankyou-wrapper__link { text-decoration: none; min-width: 100px; min-height: 50px; background-color: #EC1F46; padding: 18px; font-size: 12px; line-height: 15px; color: #fff; border: none; border-radius: 4px; cursor: pointer; text-align: center; }
+
 .newsletter { position: relative; padding: 98px 0 87px; min-height: 260px; background: transparent; }
 
 .newsletter:before { content: ''; position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-color: rgba(10, 34, 61, 0.8); }
@@ -249,7 +247,7 @@ template { display: none; }
 
 .subscribe__input { position: absolute; width: 100%; height: 100%; border: none; padding-left: 33px; padding-right: 75px; font-weight: 300; font-size: 14px; line-height: 18px; }
 
-.subscribe__button { position: absolute; min-width: 65px; right: 0; top: 0; height: 100%; border: none; background-color: #EC1F46; color: #fff; }
+.subscribe__button { position: absolute; min-width: 65px; right: 0; top: 0; height: 100%; border: none; background-color: #EC1F46; color: #fff; cursor: pointer; }
 
 .reviews { padding: 40px 0 70px 0; }
 
@@ -371,7 +369,7 @@ template { display: none; }
 
 .footer__input { margin-bottom: 15px; flex-basis: 48%; }
 
-.footer__message { margin-bottom: 22px; }
+.footer__message { font-family: inherit; margin-bottom: 22px; border-radius: 4px; background: #FFFFFF; padding: 18px 23px; border: none; width: 100%; height: 133px; resize: both; }
 
 .footer__message-wrapper { display: flex; justify-content: space-between; flex-basis: 100%; align-items: center; }
 
@@ -406,8 +404,7 @@ template { display: none; }
 @media (max-width: 1200px) { .container { max-width: 960px; }
   .hotel-slider { width: 570px; border-radius: 8px; }
   .swiper-slide__image { width: 100%; height: 100%; object-fit: cover; }
-  .card { width: 230px; height: 250px; }
-  .footer__input { flex-basis: 100%; } }
+  .card { width: 230px; height: 250px; } }
 
 @media (max-width: 992px) { .container, .newsletter-wrapper { width: 700px; }
   .logo { width: 132px; }
@@ -491,7 +488,9 @@ template { display: none; }
   .footer__rules { grid-row: 8; grid-column: 1; margin-top: 15px; flex-direction: column; }
   .footer__rules-ul { margin-bottom: 15px; }
   .footer__button-wrapper { flex-direction: column; align-items: flex-start; }
-  .footer__info { order: -1; margin-bottom: 15px; } }
+  .footer__info { order: -1; margin-bottom: 15px; }
+  .thankyou-wrapper { display: flex; flex-direction: column; align-items: flex-start; }
+  .thankyou-wrapper__link { margin-top: 20px; } }
 
 @media (max-width: 389px) { .booking, .map, .newsletter-wrapper, .subscribe { width: 100%; }
   .slider { height: 179px; }
