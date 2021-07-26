@@ -395,7 +395,7 @@ template { display: none; }
 
 .modal__input { width: 100%; margin-bottom: 15px; }
 
-.modal__message { width: 100%; min-height: 123px; margin-bottom: 15px; }
+.modal__message { font-family: inherit; padding: 0 23px; width: 100%; min-height: 123px; margin-bottom: 15px; }
 
 .modal__info { font-weight: bold; font-size: 12px; line-height: 15px; color: #E0E0E0; }
 
@@ -432,7 +432,9 @@ template { display: none; }
   .footer__additional { grid-column: span 2; }
   .footer__contact-details { grid-column: span 5; grid-row: 3; }
   .footer__contact-form { grid-column: span 5; grid-row: 4; }
-  .footer__rules { grid-row: 5; grid-column: 1 / 7; } }
+  .footer__rules { grid-row: 5; grid-column: 1 / 7; }
+  .modal__dialog { width: 100%; }
+  .modal__input, .modal__message { font-family: inherit; } }
 
 @media (max-width: 768px) { .container { max-width: 576px; width: 92%; }
   body { padding-top: 78px; }
@@ -470,7 +472,9 @@ template { display: none; }
   .reviews-slider__button--next { margin-right: -65px; right: 50%; transform: translate(50%, 0); }
   .activities { padding-top: 40px; padding-bottom: 60px; }
   .card { width: 49%; height: 255px; }
-  .footer__input { flex-basis: 100%; } }
+  .footer__input { flex-basis: 100%; }
+  .modal__dialog { padding: 33px 70px; width: 100%; }
+  .modal__input, .modal__message { font-size: 10px; font-family: inherit; width: 100%; } }
 
 @media (max-width: 584px) { .logo { width: 99px; }
   .hotel__slider { margin-bottom: 20px; }
@@ -490,7 +494,10 @@ template { display: none; }
   .footer__button-wrapper { flex-direction: column; align-items: flex-start; }
   .footer__info { order: -1; margin-bottom: 15px; }
   .thankyou-wrapper { display: flex; flex-direction: column; align-items: flex-start; }
-  .thankyou-wrapper__link { margin-top: 20px; } }
+  .thankyou-wrapper__link { margin-top: 20px; }
+  .modal__dialog { padding: 33px 25px; }
+  .modal__info { margin-top: 10px; }
+  .modal__button-wrapper { display: flex; flex-direction: column; } }
 
 @media (max-width: 389px) { .booking, .map, .newsletter-wrapper, .subscribe { width: 100%; }
   .slider { height: 179px; }
