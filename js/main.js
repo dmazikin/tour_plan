@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
-    $(".navbar-bottom").toggleClass("navbar-botom--visible");
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
   //Модальное окно
   var modalButton = $("[data-toggle=modal]");
