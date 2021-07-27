@@ -46,7 +46,7 @@ try {
   $mail->addAddress('mityamazikin@gmail.com');
 
   // Отправка сообщения
-  if ($message && $phone && $name) {
+  if ($message != '' || $phone != '' || $name != '') {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;
