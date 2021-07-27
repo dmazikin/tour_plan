@@ -21,6 +21,14 @@ $(document).ready(function () {
     modalOverLay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  document.addEventListener("keydown", function (event) {
+    let modalOverLay = $(".modal__overlay");
+    let modalDialog = $(".modal__dialog");
+    if (event.key === "Escape") {
+      modalOverLay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  });
 
   const hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
