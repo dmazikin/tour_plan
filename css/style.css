@@ -443,7 +443,7 @@ template { display: none; }
   .navbar__user_mobile_visible, .navbar__search_mobile_visible { display: flex; }
   .navbar__user { flex-direction: column; justify-content: center; }
   .navbar-bottom { display: none; position: fixed; left: 0; right: 0; bottom: 0; top: 78px; padding-top: 30px; }
-  .navbar-bottom--visible { display: block; }
+  .navbar-bottom--visible { display: block; overflow: scroll; }
   .navbar-menu { flex-direction: column; }
   .navbar-menu__item { margin-bottom: 20px; }
   .navbar-menu__item_mobile_visible { display: block; }
