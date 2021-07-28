@@ -1,4 +1,5 @@
 .packages
+  margin-bottom: 70px
   &__title
     font-style: normal
     font-weight: bold
@@ -9,10 +10,9 @@
     color: $text-color
   &-wrapper
     display: grid
-    width: 100%
-    grid-template-columns: repeat(3,1fr)
-    grid-auto-rows: 1fr
-    gap: 30px 30px
+    grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    grid-template-rows: minmax(500px, 500px)
+    gap: 30px
   &-offer
     background-color: $primary
     min-width: 95px
@@ -24,39 +24,66 @@
     font-size: 12px
     line-height: 15px
     color: $light
-  &-leftimg
-
-    &__image
-      height: 100%
+  &-room
+    margin-bottom: 37px
+    &__text
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      margin-bottom: 11px
   &-card
     position: relative
     color: $light
     background-color: $dark
     border-radius: 8px
     &__info
-      padding: 30px 21px 30px 32px
+      padding: 20px 30px
     &__image
       width: 100%
-      min-height: 250px
+      max-height: 250px
     &__title
       font-weight: bold
       font-size: 18px
       line-height: 23px
-      margin-bottom: 33px
+      margin-bottom: 30px
     &__text
       margin-bottom: 11px
       display: flex
       align-items: center
+      margin-bottom: 11px
     &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
       margin-left: 14px
+    &__room
+      margin-bottom: 34px
+
 .horizontal-card
-  display: inline-grid
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  grid-template-rows: minmax(500px, 500px)
+  grid-column: 1 / 3
   position: relative
-  grid-column: span 2
   color: $light
-  border-radius: 8px
+  &__description
+    margin-left: 18px
+  &__text
+    margin-bottom: 34px
+  &__image
+    max-width: 100%
+    height: 100%
+    object-fit: cover
   &__info
-    padding: 40px 20px 40px 40px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    border-radius: 0px 8px 8px 0px
+    padding: 24px 20px 30px 44px
     background-color: $dark
     grid-column-start: 2
   &__title
@@ -64,23 +91,27 @@
     font-size: 18px
     line-height: 23px
     margin-bottom: 27px
-  &__text
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 160.6%
-    margin-bottom: 34px
-  &__image
-    width: 366px
-    height: 100%
 .book-up
   display: flex
   justify-content: space-between
-  align-items: flex-end
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 120px
+    min-height: 40px
+    background: $primary
+    border-radius: 4px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    cursor: pointer
   &__price
     display: flex
     flex-direction: column
   &__oldprice
+    margin-bottom: 5px
     font-weight: normal
     font-size: 14px
     line-height: 18px
