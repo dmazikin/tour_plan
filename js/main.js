@@ -30,6 +30,29 @@ $(document).ready(function () {
     }
   });
 
+  //Валидация формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter a name",
+          minlength: "Name must be at least 2 letters long",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone is required",
+        },
+      },
+    });
+  });
+
+  //Макса
+  $(".phone").mask("+7 (999)-999-99-99");
+
   const hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     loop: true,

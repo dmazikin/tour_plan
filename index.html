@@ -561,15 +561,16 @@
           action="send.php"
           name="subscribe"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required="required"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -860,20 +861,26 @@
               action="send.php"
               name="send_message"
               method="POST"
-              class="footer__form"
+              class="footer__form form"
             >
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required="required"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone"
+                  placeholder="+7 (999)-999-99-99*"
+                  name="phone"
+                  required="required"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -923,25 +930,28 @@
           action="send.php"
           name="send_message"
           method="POST"
-          class="modal__form"
+          class="modal__form form"
         >
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required="required"
           />
           <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
+            type="tel"
+            class="input modal__input phone"
+            placeholder="+7 (999)-999-99-99*"
             name="phone"
+            required="required"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required="required"
           />
           <textarea
             class="message modal__message"
@@ -969,25 +979,28 @@
           action="send.php"
           name="send_message"
           method="POST"
-          class="modal__form"
+          class="modal__form form"
         >
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required="required"
           />
           <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
+            type="tel"
+            class="input modal__input phone"
+            placeholder="+7 (999)-999-99-99*"
             name="phone"
+            required="required"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required="required"
           />
           <textarea
             class="message modal__message"
@@ -1007,6 +1020,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=20b3cfe2-b572-49c8-b0d6-c66dc0759e99"></script>
     <script src="js/parallax.min.js"></script>
     <script src="mapbasics.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
