@@ -517,6 +517,7 @@ template { display: none; }
   .horizontal-card:nth-of-type(1n)__info { padding: 16px 9px 15px 21px; }
   .packages-card__info { padding: 20px 10px; }
   .packages-wrapper { gap: 15px; }
+  .packages__title { font-size: 20px; }
   .book-up { flex-direction: column; }
   .book-up__pricetag { font-size: 15px; } }
 
