@@ -45,13 +45,19 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Phone must contain 11 digits",
         },
       },
     });
   });
 
-  //Макса
-  $(".phone").mask("+7 (999)-999-99-99");
+  //Маска
+  var maskPhone = $(".phone").mask("+7(000)-000-00-00", {
+    translation: {
+      pattern: /[0-9]/,
+      optional: true,
+    },
+  });
 
   const hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters

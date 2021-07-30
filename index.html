@@ -863,24 +863,28 @@
               method="POST"
               class="footer__form form"
             >
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required="required"
-                />
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required="required"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required="required"
+                    minlength="17"
+                  />
+                </div>
               </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone"
-                  placeholder="+7 (999)-999-99-99*"
-                  name="phone"
-                  required="required"
-                />
-              </div>
+
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -942,9 +946,10 @@
           <input
             type="tel"
             class="input modal__input phone"
-            placeholder="+7 (999)-999-99-99*"
+            placeholder="Phone Number*"
             name="phone"
             required="required"
+            minlength="17"
           />
           <input
             type="email"
@@ -991,9 +996,10 @@
           <input
             type="tel"
             class="input modal__input phone"
-            placeholder="+7 (999)-999-99-99*"
+            placeholder="Phone Number*"
             name="phone"
             required="required"
+            minlength="17"
           />
           <input
             type="email"

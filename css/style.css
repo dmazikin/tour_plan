@@ -10,7 +10,7 @@ button { padding: 0; border: none; }
 
 .button { min-width: 160px; min-height: 50px; background-color: #EC1F46; padding: 18px; font-size: 12px; line-height: 15px; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 
-.invalid { color: #EC1F46; border-bottom: 1px solid #EC1F46; }
+.invalid { font-size: 12px; color: #EC1F46; border-bottom: 1px solid #EC1F46; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
@@ -247,9 +247,9 @@ template { display: none; }
 
 .subscribe { position: relative; width: 355px; height: 55px; }
 
-.subscribe__input { width: 100%; height: 100%; border: none; padding-left: 33px; padding-right: 75px; font-weight: 300; font-size: 14px; line-height: 18px; margin-bottom: 10px; }
+.subscribe__input { width: 100%; height: 100%; border: none; padding-left: 33px; padding-right: 75px; font-weight: 300; font-size: 14px; line-height: 18px; margin-bottom: 10px; border-radius: 0px 4px 4px 0px; }
 
-.subscribe__button { position: absolute; min-width: 65px; right: 0; top: 0; height: 100%; border: none; background-color: #EC1F46; color: #fff; cursor: pointer; }
+.subscribe__button { position: absolute; min-width: 65px; right: 0; top: 0; height: 100%; border: none; background-color: #EC1F46; color: #fff; cursor: pointer; border-radius: 0px 4px 4px 0px; }
 
 .reviews { padding: 40px 0 70px 0; }
 
@@ -382,6 +382,8 @@ template { display: none; }
 .footer__input { width: 100%; }
 
 .footer__input-group { margin-bottom: 15px; flex-basis: 48%; }
+
+.footer__input-wrapper { display: flex; justify-content: space-between; flex-basis: 100%; }
 
 .footer__message { font-family: inherit; margin-bottom: 22px; border-radius: 4px; background: #FFFFFF; padding: 18px 23px; border: none; width: 100%; height: 133px; resize: both; }
 
@@ -517,7 +519,7 @@ template { display: none; }
   .footer__info { order: -1; margin-bottom: 15px; }
   .thankyou-wrapper { display: flex; flex-direction: column; align-items: flex-start; }
   .thankyou-wrapper__link { margin-top: 20px; }
-  .modal__dialog { padding: 33px 36px; }
+  .modal__dialog { height: 530px; max-height: 100%; overflow: scroll; padding: 33px 36px; }
   .modal__info { margin-top: 10px; }
   .modal__button-wrapper { display: flex; flex-direction: column; }
   .horizontal-card:nth-of-type(1n) { display: none; }
@@ -532,7 +534,8 @@ template { display: none; }
   .packages-card__info { padding: 20px 25px; }
   .packages-card__image { max-height: 250px; }
   .book-up { flex-direction: row; }
-  .book-up__button { min-width: 90px; } }
+  .book-up__button { min-width: 90px; }
+  .invalid { font-size: 10px; } }
 
 @media (max-width: 389px) { .booking, .map, .newsletter-wrapper, .subscribe { width: 100%; }
   .slider { height: 179px; }
