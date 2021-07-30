@@ -253,9 +253,6 @@
             <button
               class="hotel-slider__button hotel-slider__button--prev"
             ></button>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
           </div>
           <!-- /.swiper-container -->
 
@@ -315,7 +312,12 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map lazy" id="map"></div>
+            <div class="map lazy" id="map">
+              <script
+                id="map_lazy"
+                src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=20b3cfe2-b572-49c8-b0d6-c66dc0759e99"
+              ></script>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -1161,7 +1163,6 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=20b3cfe2-b572-49c8-b0d6-c66dc0759e99"></script>
     <script src="js/parallax.min.js"></script>
     <script src="mapbasics.js"></script>
     <script src="js/jquery.validate.min.js"></script>
