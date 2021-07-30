@@ -62,7 +62,15 @@ $(document).ready(function () {
   //Анимация сайта
   AOS.init();
   //Ленивая загрузка
-  $(".lazy").lazy();
+  $(".lazy").Lazy({
+    // your configuration goes here
+    scrollDirection: "vertical",
+    effect: "show",
+    visibleOnly: true,
+    onError: function (element) {
+      console.log("error loading " + element.data("src"));
+    },
+  });
   const hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     loop: true,
