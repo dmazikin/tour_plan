@@ -51,13 +51,16 @@ $(document).ready(function () {
     });
   });
 
-  //Маска
+  //Маска для телефона
   var maskPhone = $(".phone").mask("+7(000)-000-00-00", {
     translation: {
       pattern: /[0-9]/,
       optional: true,
     },
   });
+
+  //Анимация сайта
+  AOS.init();
 
   const hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
