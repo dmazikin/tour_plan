@@ -103,6 +103,7 @@ $(document).ready(function () {
   $(function () {
     $(".lazy").Lazy();
   });
+
   let map_container = document.getElementById("map");
   console.log(map_container);
   let options_map = {
